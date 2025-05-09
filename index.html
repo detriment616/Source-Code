@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Copy Code</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      padding: 2em;
+      background-color: #f9f9f9;
+    }
+    .container {
+      background: #fff;
+      border: 1px solid #ccc;
+      padding: 1em;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      max-width: 600px;
+      margin: auto;
+    }
+    textarea {
+      width: 100%;
+      height: 200px;
+      margin-top: 1em;
+      padding: 1em;
+      font-family: monospace;
+      font-size: 0.9em;
+      resize: none;
+    }
+    button {
+      margin-top: 1em;
+      padding: 0.75em 2em;
+      font-size: 1em;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      background-color: #007bff;
+      color: white;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    #thankYouMessage {
+      display: none;
+      margin-top: 20px;
+      padding: 1em;
+      background-color: #d4edda;
+      color: #155724;
+      border: 1px solid #c3e6cb;
+      border-radius: 5px;
+      text-align: center;
+      animation: fadeInOut 3s ease-in-out;
+    }
+    @keyframes fadeInOut {
+      0% { opacity: 0; }
+      10% { opacity: 1; }
+      90% { opacity: 1; }
+      100% { opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Copy the Code Below</h2>
+    <textarea id="code" readonly>source[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</textarea>
+    <button onclick="copyCode()">Copy to Clipboard</button>
+    <div id="thankYouMessage">Thank you for using Apple Sidelab services!</div>
+  </div>
+  <script>
+    function copyCode() {
+      const textarea = document.getElementById("code");
+      textarea.select();
+      textarea.setSelectionRange(0, 99999);
+      document.execCommand("copy");
+      const message = document.getElementById("thankYouMessage");
+      message.style.display = "block";
+      setTimeout(() => {
+        message.style.display = "none";
+      }, 3000);
+    }
+  </script>
+</body>
+</html>
